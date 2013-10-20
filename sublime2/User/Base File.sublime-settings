@@ -2,15 +2,32 @@
 // are overridden in turn by file type specific settings. Place your settings
 // here, to ensure they're preserved when upgrading.
 {
-  "vintage_start_in_command_mode": true,
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
+  "margin": 0,
+  "scroll_past_end": true,
+  "ensure_newline_at_eof_on_save": true,
+  "use_simple_full_screen": true,
+  "open_files_in_new_window": false,
   "drawWhiteSpace": true,
   "matchBracketsAngle": true,
   "matchBracketsBraces": true,
   "matchBracketsSquare": true,
-  "rulers": [ 80 ],
   "show_minimap": false,
   "trim_trailing_white_space_on_save": true,
-  "highlight_modified_tabs": true
+  "highlight_modified_tabs": true,
+  "dictionary": "Packages/Language - English/en_US.dic",
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    ".sass-cache"
+  ],
+  "font_size": 14.0,
+  "ignored_packages":
+  [
+    "Vintage",
+    "Phpcs"
+  ],
+  "spell_check": true
 }
