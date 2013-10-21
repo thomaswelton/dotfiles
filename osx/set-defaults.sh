@@ -145,6 +145,9 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 # Add iOS Simulator to Launchpad
 ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
 
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
 ###############################################################################
 # iTunes                                                                      #
 ###############################################################################
