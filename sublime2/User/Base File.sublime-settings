@@ -6,7 +6,7 @@
   "scroll_past_end": true,
   "ensure_newline_at_eof_on_save": true,
   "use_simple_full_screen": true,
-  "open_files_in_new_window": false,
+  "open_files_in_new_window": true,
   "drawWhiteSpace": true,
   "matchBracketsAngle": true,
   "matchBracketsBraces": true,
