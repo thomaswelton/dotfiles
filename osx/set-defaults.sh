@@ -160,6 +160,9 @@ ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Appli
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
+# Enable the MacBook Air USB Drive Drive on any Mac
+sudo nvram boot-args="mbasd=1"
+
 ###############################################################################
 # iTunes                                                                      #
 ###############################################################################
