@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# MySQL Backup
+# 
+# Backup all local databases
+#
+
+NOW=$(date +"%s")
+DEST="/Users/$USER/mysql"
+# set mysql login info
+MUSER="root"
+MHOST="127.0.0.1"  # Server Name
+ 
+# guess binary names
+MYSQL="$(which mysql)"
+MYSQLDUMP="$(which mysqldump)"
+GZIP="$(which gzip)"
+ 
+[ ! -d "${DEST}" ] && mkdir -p "${DEST}"
+# get all db names
+DBS="$($MYSQL -u $MUSER -h $MHOST -Bse 'show databases')"
+for db in $DBS
+do
+	mkdir -p ${DEST}/${db}/
+	FILE=${DEST}/${db}/${db}-backup.${NOW}.gz
+ 	# get around error 
+ 	$MYSQLDUMP --single-transaction -u $MUSER -h $MHOST $db | $GZIP -9 > $FILE
+done
