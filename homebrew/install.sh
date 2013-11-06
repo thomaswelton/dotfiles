@@ -9,7 +9,7 @@
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)" > /tmp/homebrew-install.log
+  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 fi
 
 # Install homebrew packages
