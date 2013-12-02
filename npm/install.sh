@@ -17,6 +17,7 @@ bower
 coffee-script
 grunt-cli
 nodeunit
+less
 )
 
 for package in ${packages[@]} ; do
