@@ -16,6 +16,6 @@ fi
 brew update
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew install grc coreutils spark hub
 
 exit 0
