@@ -15,7 +15,10 @@ fi
 # Upgrade homebrew
 brew update
 
+# Tap repos
+brew tap homebrew/dupes
+
 # Install homebrew packages
-brew install grc coreutils spark hub
+brew install grc coreutils spark hub php55
 
 exit 0
