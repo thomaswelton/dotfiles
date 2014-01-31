@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Open all modified files
+
+$EDITOR $(git status --short | awk '$1 ~ /^M$/ {print $2}')
