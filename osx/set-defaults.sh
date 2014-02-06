@@ -12,15 +12,6 @@
 # the Dock to launch apps.
 #defaults write com.apple.dock persistent-apps -array
 
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
@@ -159,14 +150,8 @@ defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
-# Add iOS Simulator to Launchpad
-ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
-
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
-
-# Enable the MacBook Air USB Drive Drive on any Mac
-sudo nvram boot-args="mbasd=1"
 
 ###############################################################################
 # iTunes                                                                      #
