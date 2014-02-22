@@ -16,9 +16,18 @@ fi
 brew update
 
 # Tap repos
-brew tap homebrew/dupes
+brew tap phinze/cask
 
-# Install homebrew packages
-brew install grc coreutils spark hub php55
+packages=(
+grc
+coreutils
+spark
+hub
+brew-cask
+)
+
+for package in ${packages[@]} ; do
+  brew install $package
+done
 
 exit 0

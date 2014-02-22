@@ -1,0 +1,25 @@
+{
+	"installed_packages":
+	[
+		"Additional PHP Snippets",
+		"Alignment",
+		"ApacheConf.tmLanguage",
+		"Better CoffeeScript",
+		"EditorConfig",
+		"Emmet",
+		"Emmet Css Snippets",
+		"GitHub Flavored Markdown Preview",
+		"Laravel Blade Highlighter",
+		"Markdown Extended",
+		"Package Control",
+		"Paste Laravel",
+		"PHP-Twig",
+		"Puppet",
+		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-coffee",
+		"SublimeLinter-contrib-jslint",
+		"SublimeLinter-contrib-puppet",
+		"SublimeLinter-json"
+	]
+}
