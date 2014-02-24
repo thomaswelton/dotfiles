@@ -1,0 +1,24 @@
+{
+  "name": "dotfiles",
+  "version": "0.0.0",
+  "description": "Globally installed packages for my dotfiles",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thomaswelton/dotfiles.git"
+  },
+  "author": "Thomas Welton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomaswelton/dotfiles/issues"
+  },
+  "homepage": "https://github.com/thomaswelton/dotfiles",
+  "dependencies": {
+    "bower": "~1.2.8",
+    "coffee-script": "~1.7.1",
+    "grunt-cli": "~0.1.13",
+    "nodeunit": "~0.8.6",
+    "less": "~1.6.3",
+    "jslint": "~0.2.11",
+    "gulp": "~3.5.2"
+  }
+}
