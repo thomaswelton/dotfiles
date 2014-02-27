@@ -14,5 +14,6 @@
 	[
 		"Vintage"
 	],
+	"show_panel_on_build": false,
 	"spell_check": true
 }
