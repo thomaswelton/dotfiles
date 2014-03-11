@@ -24,6 +24,7 @@ coreutils
 spark
 hub
 brew-cask
+cabal-install
 )
 
 for package in ${packages[@]} ; do
