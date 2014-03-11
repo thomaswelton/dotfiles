@@ -21,11 +21,16 @@
 		"PHP-Twig",
 		"Puppet",
 		"Sass",
+		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-coffee",
 		"SublimeLinter-contrib-jslint",
 		"SublimeLinter-contrib-puppet",
 		"SublimeLinter-json",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-json",
+		"SublimeLinter-shellcheck",
+		"Varnish VCL"
 	]
 }
