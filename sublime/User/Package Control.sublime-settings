@@ -25,6 +25,7 @@
 		"SublimeLinter-coffee",
 		"SublimeLinter-contrib-jslint",
 		"SublimeLinter-contrib-puppet",
-		"SublimeLinter-json"
+		"SublimeLinter-json",
+		"TrailingSpaces"
 	]
 }
