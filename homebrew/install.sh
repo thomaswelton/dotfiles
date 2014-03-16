@@ -31,4 +31,20 @@ for package in ${packages[@]} ; do
   brew install $package
 done
 
+applications=(
+google-chrome
+firefox
+spotify
+sequel-pro
+virtualbox
+vagrant
+tower
+cyberduck
+transmission
+)
+
+for application in ${applications[@]} ; do
+  brew cask install $application
+done
+
 exit 0
