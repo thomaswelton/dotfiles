@@ -17,6 +17,7 @@ brew update
 
 # Tap repos
 brew tap phinze/cask
+brew tap josegonzalez/homebrew-php
 
 packages=(
 grc
@@ -25,6 +26,9 @@ spark
 hub
 brew-cask
 cabal-install
+php55
+php55-mcrypt
+josegonzalez/php/composer
 )
 
 for package in ${packages[@]} ; do

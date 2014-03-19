@@ -14,3 +14,6 @@ $ZSH/homebrew/install.sh 2>&1
 
 # Install homebrew packages
 $ZSH/npm/install.sh 2>&1
+
+# Install composer packages
+$ZSH/composer/install.sh 2>&1
