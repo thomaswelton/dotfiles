@@ -18,7 +18,6 @@
 		"Markdown Extended",
 		"Package Control",
 		"Paste Laravel",
-		"PHP-Twig",
 		"Puppet",
 		"Sass",
 		"SideBarEnhancements",
@@ -26,11 +25,11 @@
 		"SublimeLinter-coffee",
 		"SublimeLinter-contrib-jslint",
 		"SublimeLinter-contrib-puppet",
-		"SublimeLinter-json",
-		"TrailingSpaces",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-json",
 		"SublimeLinter-shellcheck",
+		"TrailingSpaces",
+		"Twig",
 		"Varnish VCL"
 	]
 }
