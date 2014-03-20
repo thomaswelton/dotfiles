@@ -45,6 +45,11 @@ vagrant
 tower
 cyberduck
 transmission
+qlcolorcode
+qlstephen
+qlmarkdown
+quicklook-json
+qlprettypatch
 )
 
 for application in ${applications[@]} ; do
