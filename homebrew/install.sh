@@ -51,6 +51,7 @@ qlstephen
 qlmarkdown
 quicklook-json
 qlprettypatch
+google-drive
 )
 
 for application in ${applications[@]} ; do
