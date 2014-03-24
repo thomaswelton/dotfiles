@@ -30,6 +30,7 @@
 		"SublimeLinter-shellcheck",
 		"TrailingSpaces",
 		"Twig",
-		"Varnish VCL"
+		"Varnish VCL",
+		"Xdebug Client"
 	]
 }
