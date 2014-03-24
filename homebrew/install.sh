@@ -45,6 +45,7 @@ vagrant
 tower
 cyberduck
 transmission
+adobe-creative-cloud
 )
 
 for application in ${applications[@]} ; do
