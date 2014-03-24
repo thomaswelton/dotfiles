@@ -46,6 +46,11 @@ tower
 cyberduck
 transmission
 adobe-creative-cloud
+qlcolorcode
+qlstephen
+qlmarkdown
+quicklook-json
+qlprettypatch
 )
 
 for application in ${applications[@]} ; do
