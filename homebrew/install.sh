@@ -29,6 +29,7 @@ cabal-install
 php55
 php55-mcrypt
 josegonzalez/php/composer
+ctags
 )
 
 for package in ${packages[@]} ; do

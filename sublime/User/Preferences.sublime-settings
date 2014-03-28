@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
+	"file_exclude_patterns": [".tags", ".tags_sorted_by_file", ".gemtags", ".DS_Store"],
 	"folder_exclude_patterns":
 	[
 		".svn",
