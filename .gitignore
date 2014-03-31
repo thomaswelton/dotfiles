@@ -3,3 +3,5 @@ sublime/User/Package Control.cache
 git/gitconfig.symlink
 npm/node_modules
 .DS_Store
+
+/sublime/User/Xdebug.log
