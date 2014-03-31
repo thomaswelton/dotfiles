@@ -9,6 +9,13 @@ else
   git="/usr/bin/git"
 fi
 
+git_untracked() {
+  if git ls-files --others --exclude-standard --error-unmatch -- '*' >/dev/null 2>/dev/null
+  then
+    echo " with %{$fg_bold[yellow]%}untracked%{$reset_color%} "
+  fi
+}
+
 git_branch() {
   echo $($git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 }
@@ -72,7 +79,7 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(git_untracked)$(need_push)\n🌟 › '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
