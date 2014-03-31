@@ -30,6 +30,7 @@ php55
 php55-mcrypt
 josegonzalez/php/composer
 ctags
+autojump
 )
 
 for package in ${packages[@]} ; do

@@ -38,3 +38,6 @@ do
 done
 
 unset config_files
+
+#Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
