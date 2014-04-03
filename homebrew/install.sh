@@ -55,6 +55,7 @@ quicklook-json
 qlprettypatch
 google-drive
 github
+licecap
 )
 
 for application in ${applications[@]} ; do
