@@ -59,7 +59,7 @@ licecap
 )
 
 for application in ${applications[@]} ; do
-  brew cask install $application
+  brew cask install $application --appdir=/Applications
 done
 
 exit 0

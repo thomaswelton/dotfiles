@@ -46,3 +46,5 @@ preexec () {print -Pn "\e]2; %~/ \a"}
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
+# Configure homebrew cask to install in /Applications
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
