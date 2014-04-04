@@ -37,6 +37,8 @@ for package in ${packages[@]} ; do
   brew install $package
 done
 
+brew tap caskroom/versions
+
 applications=(
 google-chrome
 firefox
@@ -56,6 +58,8 @@ qlprettypatch
 google-drive
 github
 licecap
+sublime-text3
+hipchat
 )
 
 for application in ${applications[@]} ; do
