@@ -22,6 +22,28 @@
                 "args": [],
                 "excludes": []
             },
+            "php": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "phpcs": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "standard": "PSR2"
+            },
+            "phplint": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "phpmd": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "rulesets": "cleancode,codesize,controversial,design,naming,unusedcode"
+            },
             "puppet": {
                 "@disable": false,
                 "args": [],
