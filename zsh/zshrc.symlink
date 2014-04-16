@@ -48,3 +48,5 @@ preexec () {print -Pn "\e]2; %~/ \a"}
 
 # Configure homebrew cask to install in /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

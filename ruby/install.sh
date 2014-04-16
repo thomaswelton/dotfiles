@@ -1,13 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-if test ! $(which rbenv)
+if ! [ "$(type -t rvm)" = "file" ]
 then
-  echo "  Installing rbenv for you."
-  brew install rbenv > /tmp/rbenv-install.log
-fi
-
-if test ! $(which ruby-build)
-then
-  echo "  Installing ruby-build for you."
-  brew install ruby-build > /tmp/ruby-build-install.log
+  echo "  Installing rvm for you."
+  \curl -sSL https://get.rvm.io | bash -s stable --ignore-dotfiles > /tmp/rvm-install.log
 fi
