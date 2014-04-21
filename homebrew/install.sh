@@ -10,10 +10,10 @@ if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
+else
+	# Upgrade homebrew
+	brew update
 fi
-
-# Upgrade homebrew
-brew update
 
 # Tap repos
 brew tap phinze/cask
@@ -39,6 +39,9 @@ done
 
 brew tap caskroom/versions
 
+# Upgrade brew cask
+brew upgrade brew-cask
+
 applications=(
 google-chrome
 firefox
@@ -60,6 +63,7 @@ github
 licecap
 sublime-text3
 hipchat
+heroku-toolbelt
 )
 
 for application in ${applications[@]} ; do
