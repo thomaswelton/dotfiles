@@ -10,3 +10,11 @@ source ~/.rvm/scripts/rvm
 
 rvm install ruby-2.0.0-p451
 rvm use ruby-2.0.0-p451 --default
+
+gems=(
+compass
+sass
+scss-lint
+)
+
+gem install ${gems[@]}
