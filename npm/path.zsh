@@ -1,2 +1,2 @@
-export PATH="$ZSH/npm/node_modules/.bin:$PATH"
+export PATH="$ZSHDOT/npm/node_modules/.bin:$PATH"
 

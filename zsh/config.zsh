@@ -4,16 +4,15 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
-export LSCOLORS="exfxcxdxbxegedabagacad"
-export CLICOLOR=true
+fpath=($ZSHDOT/functions $fpath)
 
-fpath=($ZSH/functions $fpath)
-
-autoload -U $ZSH/functions/*(:t)
+autoload -U $ZSHDOT/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+
+plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew)
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
@@ -36,6 +35,8 @@ setopt HIST_REDUCE_BLANKS
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt complete_aliases
+
+source $ZSH/oh-my-zsh.sh
 
 zle -N newtab
 
