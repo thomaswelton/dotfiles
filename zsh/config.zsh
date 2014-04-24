@@ -36,6 +36,7 @@ setopt HIST_REDUCE_BLANKS
 #   like: git comm-[tab]
 setopt complete_aliases
 
+DISABLE_LS_COLORS=true
 source $ZSH/oh-my-zsh.sh
 
 zle -N newtab
