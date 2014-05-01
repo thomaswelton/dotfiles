@@ -32,6 +32,8 @@ josegonzalez/php/composer
 ctags
 autojump
 git-extras
+phantomjs
+casperjs --devel
 )
 
 for package in ${packages[@]} ; do

@@ -15,6 +15,7 @@ gems=(
 compass
 sass
 scss-lint
+travis
 )
 
 gem install ${gems[@]}
