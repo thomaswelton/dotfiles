@@ -65,6 +65,7 @@ licecap
 sublime-text3
 hipchat
 heroku-toolbelt
+mamp
 )
 
 for application in ${applications[@]} ; do
