@@ -68,6 +68,7 @@ sublime-text3
 hipchat
 heroku-toolbelt
 mamp
+xquartz
 )
 
 for application in ${applications[@]} ; do
