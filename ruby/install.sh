@@ -16,6 +16,7 @@ compass
 sass
 scss-lint
 travis
+websocket-native
 )
 
 gem install ${gems[@]}
