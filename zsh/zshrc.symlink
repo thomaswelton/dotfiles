@@ -51,5 +51,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ### Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
+
 # added by travis gem
-[ -f /Users/thomaswelton/.travis/travis.sh ] && source /Users/thomaswelton/.travis/travis.sh
+[ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
