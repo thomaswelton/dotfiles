@@ -1,0 +1,47 @@
+# Tap repos
+tap josegonzalez/homebrew-php
+
+install grc
+install coreutils
+install spark
+install hub
+install brew-cask
+install cabal-install
+install php55
+install php55-mcrypt
+install josegonzalez/php/composer
+install ctags
+install autojump
+install git-extras
+install phantomjs
+install casperjs --devel
+
+# set up brew cask
+tap phinze/homebrew-cask
+install brew-cask
+tap caskroom/versions
+
+# apps
+cask install google-chrome
+cask install firefox
+cask install spotify
+cask install sequel-pro
+cask install virtualbox
+cask install vagrant
+cask install tower
+cask install cyberduck
+cask install transmission
+cask install adobe-creative-cloud
+cask install qlcolorcode
+cask install qlstephen
+cask install qlmarkdown
+cask install quicklook-json
+cask install qlprettypatch
+cask install google-drive
+cask install github
+cask install licecap
+cask install sublime-text3
+cask install hipchat
+cask install heroku-toolbelt
+cask install mamp
+cask install xquartz
