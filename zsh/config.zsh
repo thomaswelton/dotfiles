@@ -12,7 +12,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew)
+plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow)
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
