@@ -42,6 +42,8 @@ done
 
 unset config_files
 
+source $ZSH/oh-my-zsh.sh
+
 # Open new tabs in same working directory
 precmd () {print -Pn "\e]2; %~/ \a"}
 preexec () {print -Pn "\e]2; %~/ \a"}

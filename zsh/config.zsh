@@ -12,8 +12,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow)
-
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
 setopt NO_LIST_BEEP
@@ -37,7 +35,6 @@ setopt HIST_REDUCE_BLANKS
 setopt complete_aliases
 
 DISABLE_LS_COLORS=true
-source $ZSH/oh-my-zsh.sh
 
 zle -N newtab
 
