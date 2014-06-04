@@ -10,3 +10,14 @@ export ZSH_THEME="kphoen"
 # plugins=(git docker common-aliases git-extras python rand-quote sbt scala screen svn wd tmux)
 plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow)
 
+# Load oh-my-zsh (first, so topic.zsh files override this)
+if [[ -a $ZSH/oh-my-zsh.sh ]]
+then
+  source "$ZSH/oh-my-zsh.sh"
+else
+  echo "Oh-my-zsh not found, downloading"
+  git clone https://github.com/robbyrussell/oh-my-zsh.git "$ZSH"
+  source "$ZSH/oh-my-zsh.sh"
+fi
+
+

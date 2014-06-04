@@ -24,16 +24,6 @@ do
   source $file
 done
 
-# Load oh-my-zsh (first, so topic.zsh files override this)
-if [[ -a $ZSH/oh-my-zsh.sh ]]
-then
-  source $ZSH/oh-my-zsh.sh
-else
-  echo "Oh-my-zsh not found, downloading"
-  git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
-  source $ZSH/oh-my-zsh.sh
-fi
-
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
