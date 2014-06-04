@@ -42,6 +42,16 @@ done
 
 unset config_files
 
+# Load oh-my-zsh
+if [[ -a $ZSH/oh-my-zsh.sh ]]
+then
+  source $ZSH/oh-my-zsh.sh
+else
+  echo "Oh-my-zsh not found, downloading"
+  git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
+  source $ZSH/oh-my-zsh.sh
+fi
+
 # Open new tabs in same working directory
 precmd () {print -Pn "\e]2; %~/ \a"}
 preexec () {print -Pn "\e]2; %~/ \a"}
