@@ -37,7 +37,16 @@ setopt HIST_REDUCE_BLANKS
 setopt complete_aliases
 
 DISABLE_LS_COLORS=true
-source $ZSH/oh-my-zsh.sh
+
+# Load oh-my-zsh
+if [[ -a $ZSH/oh-my-zsh.sh ]]
+then
+  source $ZSH/oh-my-zsh.sh
+else
+  echo "Oh-my-zsh not found, downloading"
+  git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
+  source $ZSH/oh-my-zsh.sh
+fi
 
 zle -N newtab
 
