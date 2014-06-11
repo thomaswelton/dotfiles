@@ -17,6 +17,7 @@ sass
 scss-lint
 travis
 websocket-native
+jekyll
 )
 
 gem install ${gems[@]}
