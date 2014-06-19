@@ -5,8 +5,15 @@
 # Global installation of composer packages
 
 
+# Check for composer
+if test ! $(which composer)
+then
+	curl -sS https://getcomposer.org/installer | php -- --install-dir=$HOME/.dotfiles/bin
+	mv $HOME/.dotfiles/bin/composer.phar $HOME/.dotfiles/bin/composer
+fi
+
 ## Update composer
-/usr/local/bin/composer self-update
+$HOME/.dotfiles/bin/composer self-update
 
 packages=(
 'phpunit/phpunit=3.7.*'

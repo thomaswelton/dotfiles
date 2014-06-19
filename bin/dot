@@ -6,8 +6,12 @@
 # to make sure you're on the latest and greatest.
 export ZSH=$HOME/.dotfiles
 
-# Set OS X defaults
-$ZSHDOT/osx/set-defaults.sh
+# If we're on a Mac lets set our defaults
+if [ "$(uname -s)" == "Darwin" ]
+then
+	# Set OS X defaults
+	$ZSHDOT/osx/set-defaults.sh
+fi
 
 # Run installers
 $ZSHDOT/script/install

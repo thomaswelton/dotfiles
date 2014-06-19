@@ -5,14 +5,12 @@ install ant
 install grc
 install coreutils
 install spark
-install hub
 install git-flow
 install git-extras
 install brew-cask
 install cabal-install
 install php55
 install php55-mcrypt
-install josegonzalez/php/composer
 install ctags
 install autojump
 install phantomjs

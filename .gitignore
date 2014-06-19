@@ -5,3 +5,5 @@ npm/node_modules
 .DS_Store
 
 /sublime/User/Xdebug.log
+
+/bin/composer
