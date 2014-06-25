@@ -47,3 +47,4 @@ cask install heroku-toolbelt
 cask install mamp
 cask install xquartz
 cask install miro-video-converter
+cask install spectacle
