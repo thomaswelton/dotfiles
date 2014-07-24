@@ -23,5 +23,5 @@ packages=(
 )
 
 for package in ${packages[@]} ; do
-  composer global require $package
+  $HOME/.dotfiles/bin/composer global require $package
 done
