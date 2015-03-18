@@ -18,6 +18,5 @@ then
 		brew update
 	fi
 
-	brew bundle $HOME/.dotfiles/homebrew/Brewfile
 	exit 0
 fi
