@@ -20,6 +20,7 @@ packages=(
 'phpmd/phpmd=1.4.*'
 'squizlabs/php_codesniffer=*'
 'phpdocumentor/phpdocumentor=2.*'
+'laravel/installer=~1.1'
 )
 
 for package in ${packages[@]} ; do
