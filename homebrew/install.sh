@@ -18,5 +18,35 @@ then
 		brew update
 	fi
 
+	repos=(
+	'josegonzalez/homebrew-php'
+	)
+
+	for repo in ${repos[@]} ; do
+	  brew tap $repo
+	done
+
+	packages=(
+	'ant'
+	'grc'
+	'coreutils'
+	'spark'
+	'git-flow'
+	'git-extras'
+	'cabal-install'
+	'php55'
+	'php55-mcrypt'
+	'ctags'
+	'autojump'
+	'phantomjs'
+	'casperjs --devel'
+	'boot2docker'
+	)
+
+	for package in ${packages[@]} ; do
+	  brew install $package
+	done
+
+
 	exit 0
 fi
