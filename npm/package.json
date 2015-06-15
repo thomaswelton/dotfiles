@@ -13,10 +13,10 @@
   },
   "homepage": "https://github.com/thomaswelton/dotfiles",
   "dependencies": {
-    "bower": "~1.3.0",
+    "bower": "*",
     "coffee-script": "~1.7.1",
-    "grunt-cli": "~0.1.13",
-    "gulp": "~3.5.2",
+    "grunt-cli": "*",
+    "gulp": "*",
     "jslint": "~0.2.11",
     "less": "~1.6.3",
     "mocha": "^1.20.1",

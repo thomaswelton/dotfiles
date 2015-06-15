@@ -16,7 +16,7 @@ fi
 $HOME/.dotfiles/bin/composer self-update
 
 packages=(
-'phpunit/phpunit=3.7.*'
+'phpunit/phpunit=~4.0'
 'phpmd/phpmd=1.4.*'
 'squizlabs/php_codesniffer=*'
 'phpdocumentor/phpdocumentor=2.*'
