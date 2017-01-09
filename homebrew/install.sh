@@ -8,45 +8,38 @@
 # If we're on a Mac lets set our defaults
 if [ "$(uname -s)" == "Darwin" ]
 then
-	# Check for Homebrew
-	if test ! $(which brew)
-	then
-	  echo "  Installing Homebrew for you."
-	  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
-	else
-		# Upgrade homebrew
-		brew update
-	fi
+  echo "  Installing Homebrew for you."
 
-	repos=(
+  # Install the correct homebrew for each OS type
+  if test "$(uname)" = "Darwin"
+  then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
+  then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  fi
+
+fi
+
+repos=(
 	'josegonzalez/homebrew-php'
-	)
+)
 
-	for repo in ${repos[@]} ; do
-	  brew tap $repo
-	done
+for repo in ${repos[@]} ; do
+  brew tap $repo
+done
 
-	packages=(
-	'ant'
-	'grc'
-	'coreutils'
-	'spark'
+packages=(
 	'git-flow'
 	'git-extras'
-	'cabal-install'
 	'php55'
-	'php55-mcrypt'
-	'ctags'
 	'autojump'
-	'phantomjs'
-	'casperjs --devel'
-	'boot2docker'
-	)
+)
 
-	for package in ${packages[@]} ; do
-	  brew install $package
-	done
+for package in ${packages[@]} ; do
+  brew install $package
+done
 
 
-	exit 0
+exit 0
 fi

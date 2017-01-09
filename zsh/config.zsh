@@ -1,3 +1,4 @@
+
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
@@ -5,6 +6,9 @@ else
 fi
 
 fpath=($ZSHDOT/functions $fpath)
+
+export LSCOLORS="exfxcxdxbxegedabagacad"
+export CLICOLOR=true
 
 autoload -U $ZSHDOT/functions/*(:t)
 
@@ -36,24 +40,9 @@ setopt HIST_REDUCE_BLANKS
 #   like: git comm-[tab]
 setopt complete_aliases
 
-DISABLE_LS_COLORS=true
-
-# Load oh-my-zsh
-if [[ -a $ZSH/oh-my-zsh.sh ]]
-then
-  source $ZSH/oh-my-zsh.sh
-else
-  echo "Oh-my-zsh not found, downloading"
-  git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
-  source $ZSH/oh-my-zsh.sh
-fi
-
-zle -N newtab
-
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
 bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
