@@ -13,4 +13,4 @@ then
 fi
 
 ## Install packages from package.json
-npm --prefix $HOME/.dotfiles/npm install $HOME/.dotfiles/npm
+## npm --prefix $HOME/.dotfiles/npm install $HOME/.dotfiles/npm

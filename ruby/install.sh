@@ -12,12 +12,7 @@ rvm install ruby-2.0.0-p451
 rvm use ruby-2.0.0-p451 --default
 
 gems=(
-compass
-sass
 scss-lint
-travis
-websocket-native
-jekyll
 )
 
 gem install ${gems[@]}

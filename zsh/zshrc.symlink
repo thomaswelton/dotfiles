@@ -54,3 +54,9 @@ export PATH="$PATH:/usr/local/heroku/bin"
 
 # added by travis gem
 [ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
+
+export NVM_DIR="/Users/thomaswelton/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="/Users/thomaswelton/.rvm/gems/ruby-2.0.0-p451/bin:$PATH"
+

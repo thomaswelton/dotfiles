@@ -2,4 +2,3 @@ init.author.email = "thomaswelton@me.com"
 init.author.name = "Thomas Welton"
 init.author.url = "http://thomaswelton.com"
 init.license = "MIT"
-prefix = ~/.node
