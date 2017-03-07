@@ -5,3 +5,4 @@
 .jira-url
 .idea
 /*.sublime-*
+npm-debug.log
