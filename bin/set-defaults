@@ -3,4 +3,3 @@
 # Sets macOS defaults by running $ZSH/macos/set-defaults.sh.
 
 exec $ZSH/macos/set-defaults.sh
->>>>>>> 06285813e51878e8d555aba62179d35318883257
