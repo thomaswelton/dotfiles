@@ -5,3 +5,5 @@ alias git=hub
 alias gulp='nocorrect gulp'
 
 alias cls='clear' # Good 'ol Clear Screen command
+
+alias dup='docker-compose up'

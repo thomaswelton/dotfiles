@@ -13,10 +13,10 @@ export CLICOLOR=true
 autoload -U $ZSHDOT/functions/*(:t)
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 
-plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow)
+plugins=(colorize brew-cask composer git-extras npm osx terminalapp autojump brew git-flow)
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
@@ -46,3 +46,6 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down

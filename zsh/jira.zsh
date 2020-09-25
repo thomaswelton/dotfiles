@@ -30,17 +30,16 @@ open_jira_issue () {
   fi
 
   if [ -z "$1" ]; then
-    echo "Opening new issue"
-    $open_cmd "$jira_url/secure/CreateIssue!default.jspa"
+    TICKET=$(git branch-name)
   else
-    TICKET="DEV-$1"
+    TICKET="PAN-$1"
+  fi
 
-    echo "Opening issue #$TICKET"
-    if [[ "x$JIRA_RAPID_BOARD" = "xtrue" ]]; then
-      $open_cmd  "$jira_url/issues/$TICKET"
-    else
-      $open_cmd  "$jira_url/browse/$TICKET"
-    fi
+  echo "Opening issue #$TICKET"
+  if [[ "x$JIRA_RAPID_BOARD" = "xtrue" ]]; then
+    $open_cmd  "$jira_url/issues/$TICKET"
+  else
+    $open_cmd  "$jira_url/browse/$TICKET"
   fi
 }
 

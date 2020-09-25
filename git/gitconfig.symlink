@@ -9,6 +9,10 @@
         wtf     = !$ZSHDOT/bin/git-wtf
         rank-contributors = !$ZSHDOT/bin/git-rank-contributors
         count   = !git shortlog -sn
+        branch-name = "!git rev-parse --abbrev-ref HEAD"
+        publish = "!git push -u origin $(git branch-name)"
+        amend = git commit --amend --no-edit
+        unstage = reset HEAD
 [color]
         diff = auto
         status = auto
@@ -34,3 +38,7 @@
 [user]
 	name = Thomas Welton
 	email = thomaswelton@me.com
+        
+[diff "ansible-vault"]
+        textconv = ansible-vault view
+        cachetextconv = true
